@@ -1,12 +1,12 @@
-Agent Identity & Policy Framework (AIPF)
-
-An Open-Standard Cryptographic Reference Implementation for Secure Agentic Interoperability and Local Policy Enforcement.
+🛡️ Agent Identity & Policy Framework (AIPF)
 
 📖 Executive Summary
 
 The rapid transition from passive Large Language Models (LLMs) to autonomous, stateful agents capable of multi-step tool execution has outpaced web security infrastructure. Legacy identity primitives (TLS, OAuth 2.0, API keys) authenticate host endpoints or human principals, but they fail to capture an agent's internal composition, model family, or delegated operational boundaries. This is the "identity deficit."
 
 The Agent Identity & Policy Framework (AIPF) is a modular, multi-layer reference architecture that resolves this vulnerability. It cleanly separates global interoperability claims from local sovereign security rules.
+
+⚙️ System Architecture
 
                +-------------------------------------------+
                |      Agent Identity Assertion (AIA)       |
@@ -74,7 +74,7 @@ Explicit Scope Enforcement: The LEI compares every action to the explicit permis
 
 📊 Empirical Benchmarking & Performance
 
-To address concern over cryptographic latency overhead in high-throughput agent deployments, this prototype includes an automated benchmarking suite.
+To address concerns over cryptographic latency overhead in high-throughput agent deployments, this prototype includes an automated benchmarking suite.
 
 The suite generates 2048-bit RSA keypairs, signs the AIA, generates the ACPD with a $SHA-256$ binding hash, and runs complete verification checks at the LEI over a 100-iteration sequence.
 
