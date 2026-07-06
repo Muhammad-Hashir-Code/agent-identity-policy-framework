@@ -234,6 +234,5 @@ This repository is licensed under the **MIT License**. See the [LICENSE](LICENSE
 
 <div align="center">
 
-*Built as part of the Singapore AI Safety Fellowship research agenda.*
 
 </div>
