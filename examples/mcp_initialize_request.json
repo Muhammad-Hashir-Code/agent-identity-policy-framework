@@ -1,0 +1,42 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2024-11-05",
+    "capabilities": {
+      "tools": {},
+      "resources": {}
+    },
+    "clientInfo": {
+      "name": "AIPF-Enabled-Agent-Client",
+      "version": "1.0.0"
+    },
+    "authentication": {
+      "aipf_protocol_version": "1.0.0",
+      "aia": {
+        "payload": {
+          "agent_id": "did:example:agent-007",
+          "principal": "did:example:hashir-labs",
+          "composition": {
+            "model_family": "llama-3-70b-instruct",
+            "certification_hash": "a1b2c3d4..."
+          },
+          "issuer": "Global_CUNY_Trust",
+          "issued_at": 1719876543,
+          "expires_at": 1719880143
+        },
+        "signature_b64": "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQ..."
+      },
+      "acpd": {
+        "payload": {
+          "aia_binding_hash": "cf23df2207d99a74fbe169e3eba035e633b65d94",
+          "scopes": ["read_db", "api_call"],
+          "nonce": "server-challenge-nonce-98213",
+          "issued_at": 1719876545
+        },
+        "signature_b64": "GgSCDKgDQEFAASCBKgwggSkAgEAAoIBAQ..."
+      }
+    }
+  }
+}
