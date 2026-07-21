@@ -120,7 +120,7 @@ The suite generates 2048-bit RSA keypairs, signs the AIA, generates the ACPD wit
 
 | Metric | Value |
 |---|---|
-| ⏱️ Average processing latency | **≈ 1.4 ms** per verification handshake |
+| ⏱️ Average processing latency | **≈ 2.86 ms** per verification handshake |
 | 🧠 Typical LLM inference cycle | 500 ms – 2000 ms |
 | 📉 Overhead as % of execution time | **< 0.3%** |
 
